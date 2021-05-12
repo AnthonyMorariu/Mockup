@@ -14,6 +14,13 @@ const theme = createMuiTheme({
         backgroundColor: '#f6f6f6'
       }
     },
+    MuiCssBaseline: {
+      '@global': {
+        body: {
+          backgroundColor: '#ffffff'
+        }
+      }
+    },
     MuiBottomNavigationAction: {
       root: {
         padding: 0,

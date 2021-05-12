@@ -46,6 +46,7 @@ const useStyles = makeStyles((theme) => ({
       flexWrap: 'wrap'
   },
   botNav: {
+    zIndex: theme.zIndex.drawer + 1,
     backgroundColor: '#f6f6f6',
     boxShadow: "4px 4px 10px 2px gray",
     width: "100%",
@@ -136,7 +137,7 @@ export default function Nav() {
             <Typography className={classes.greeting} variant="body1" >Hello Jane, Happy Birthday!</Typography>
             <img className={classes.stars} src={stars} alt="stars"/>
           </div>
-          <Avatar className={classes.navImg} alt="Profile Image">A</Avatar>
+          <Avatar className={classes.navImg} alt="Profile Image" src={process.env.PUBLIC_URL + "/jane.jpg"}></Avatar>
         </Toolbar>
       </AppBar>
       <img className={classes.effect} src={effect} alt="3d effect"/>
