@@ -187,9 +187,13 @@ export default function Nav() {
       <Hidden only={['sm', 'md', 'lg', 'xl']}>
         <BottomNavigation showLabels boxShadow={3} className={classes.botNav}>
             <BottomNavigationAction className={classes.actions} label="Dashboard" icon={<TrendingUpSharpIcon />} />
+            <Divider orientation="vertical" flexItem />
             <BottomNavigationAction className={classes.actions} label="Actions" icon={<FormatListBulletedSharpIcon />} />
+            <Divider orientation="vertical" flexItem />
             <BottomNavigationAction className={classes.actions} label="Check-in" icon={<CheckCircleOutlineSharpIcon />} />
+            <Divider orientation="vertical" flexItem />
             <BottomNavigationAction className={classes.actions} label="Directory" icon={<PeopleAltRoundedIcon />} />
+            <Divider orientation="vertical" flexItem />
             <BottomNavigationAction className={classes.notifAction} label="Notifications" icon={<Badge badgeContent={6} color="primary"><NotificationImportantOutlinedIcon /></Badge>} />
         </BottomNavigation>
        </Hidden>
